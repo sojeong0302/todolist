@@ -1,14 +1,25 @@
 {
   "todos": [
     {
-      "id": 1,
+      "id": "1",
       "title": "코테 풀기",
       "done": false
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "쉬림프 에그마요 먹기",
       "done": false
+    },
+    {
+      "title": "스프라이트 사먹기",
+      "done": false,
+      "id": "b_0l4MovTHE"
+    },
+    {
+      "title": "고고고",
+      "done": false,
+      "id": "2lbkewmOlWs"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
