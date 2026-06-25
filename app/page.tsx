@@ -1,5 +1,6 @@
 "use client";
 
+import TodoList from "@/components/TodoList";
 import type { Todo } from "@/types"; //그냥 import 해도되지만 type 붙여주면 가독성⬆️
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
@@ -43,15 +44,9 @@ const page = () => {
   return (
     <div>
       <h1>TODOLIST</h1>
-      {todos?.map((todo) => {
-        //만약 없을 수도 있으니까 옵셔널 체이닝[=?] 넣어주기
-        return (
-          <div key={todo.id} className="border">
-            <p>{todo.title}</p>
-            <p>{todo.done ? "완료" : "미완료"}</p>
-          </div>
-        );
-      })}
+      {/* 데이터가 아직 없을 수도 있으니까 널 병합 연산자 사용[=??]*/}
+      {/* 삼항 연산자는 false, 0, "", [] 모두 거짓 처리가 되니까 널 병합 연산자가 더 적합*/}
+      <TodoList todos={todos ?? []} />
     </div>
   );
 };
