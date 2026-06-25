@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "코테 풀기",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "쉬림프 에그마요 먹기",
+      "done": false
+    }
+  ]
+}
